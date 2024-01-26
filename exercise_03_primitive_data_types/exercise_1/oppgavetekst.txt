@@ -1,0 +1,7 @@
+Exercise 1 :
+
+We will look at usage of sizeof(). Please write a code that is going to output
+the sizes of various datatypes, pointers and static arrays.
+
+Hint : int, float, double, long, signed, unsigned, int *, float *, void *,
+       int array[20]

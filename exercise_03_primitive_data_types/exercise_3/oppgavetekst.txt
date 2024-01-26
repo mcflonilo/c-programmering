@@ -1,0 +1,14 @@
+Exercise 3 :
+
+Write a program that takes a number as an argument and prints if it is odd or even?
+Example :$./program 5
+         Number 5 is read and it is odd.
+         $./program all
+         Please provide a non-zero integer as argument!
+         $./program 0
+         Please provide a non-zero integer as argument!
+         $./program 6bva
+         Number 6 is read and it is even.
+
+Hint : Use argc, argv of the main
+       atoi() - can be used to convert string to int - read more at man atoi

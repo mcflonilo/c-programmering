@@ -1,0 +1,32 @@
+Exercise 2 :
+
+Please try to guess what the output of the following statements is going to be?
+[By hand, not by coding]
+
+-------------------
+int a,b,c,d;
+
+a = 5;
+b = a++;
+c = ++b;
+d = b++;
+
+//What do you think the values of a,b,c,d are?
+--------------------
+int x,y,z,w;
+
+x = 10;
+y = 9;
+z = 8;
+w = 7;
+
+if((x==y++) && (z==++x)){
+        w = 100;
+        printf("This is obviously true");
+}
+z = ++w+y++;
+
+//What do you think the values of x,y,z & w are?
+---------------------
+
+Now let us try to program this and verify the results of your hand calculations.
