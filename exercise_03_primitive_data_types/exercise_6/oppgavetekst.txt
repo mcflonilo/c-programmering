@@ -1,0 +1,29 @@
+Exercise 6:
+
+Fibonacci series:
+a[n] = a[n-1] + a[n-2]
+a[0] = 0
+a[1] = 1
+
+write a program that takes in an integer and gives out the a[integer].
+See also https://en.wikipedia.org/wiki/Fibonacci_number
+
+Hint : Recursion
+Calculate run time of the core calculation - by using this function:
+-------------------------
+2
+
+unsigned long GetTime() {
+  struct timeval tv;
+  gettimeofday(&tv,NULL);
+  return tv.tv_sec*(unsigned long)1000000+tv.tv_usec;
+}
+
+In the main code :
+        unsigned long timeStart, timeEnd;
+        timeStart = GetTime();
+        //Do some processing here;
+        timeEnd = GetTime();
+        printf("The elapsed time is %lu ms", (timeEnd - timeStart)/1000);
+-------------------------
+Can you make it more effective?
