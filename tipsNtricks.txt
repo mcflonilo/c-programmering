@@ -1,0 +1,18 @@
+Two-dimensional array with calloc
+
+    Define a pointer to pointer to double:
+        double **b;
+
+    Allocate a one-dimensional array of pointers to double
+        b = (double **) calloc(100, sizeof(double*));
+
+    For each of the pointer to double, allocate an array of double, let the pointer pointing to it.
+        for(i = 0; i < 100; ++i) {
+
+        b[i] = (double *) calloc(30, sizeof(double));
+        }
+
+    After this, you can use b as if it was declared as
+        double b[100][30];
+
+        b[79][21] = 2.1;
