@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "md5.h"
+#include "exercises_06/Leksjon6/md5/md5.h"
 
 /*
 Output should be:
@@ -13,12 +13,31 @@ void print_hash(char hash[])
 {
     int idx;
     for (idx=0; idx < 16; idx++)
-        printf("%02x",hash[idx]);
+        printf("%02x",(BYTE) hash[idx]);
     printf("\n");
 }
 
+
 int main()
 {
+    int size;
+    char *filetext;
+
+    FILE *file;
+    file = fopen("exercise_06_IO/adventure.txt", "r");
+
+    fseek(file,0l,SEEK_END);
+    size = ftell(file);
+    fseek(file, 0, SEEK_SET);
+    filetext = (char *) calloc(size, sizeof(char));
+
+    char c = getc(file);
+    for (int i = 0; c!=EOF; c=getc(file)) {
+        filetext[i]=c;
+        i++;
+    }
+
+
     char hash[16],
             in1[]={""},
             in2[]={"abc"},
@@ -45,7 +64,5 @@ int main()
     md5_update(&ctx,in3_2,strlen(in3_2));
     md5_final(&ctx,hash);
     print_hash(hash);
-
-    getchar();
     return 0;
 }

@@ -1,0 +1,2 @@
+hallo denne filen er for å teste md5 hash hihi
+
