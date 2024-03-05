@@ -6,7 +6,7 @@
 #include <string.h>
 
 int counter(){
-    static int c = 0;
+    static int c;
     c++;
     return c;
 }
