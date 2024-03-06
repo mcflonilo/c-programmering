@@ -7,4 +7,4 @@
 
 #endif //C_PROGRAMMERING_MYALLOC_H
 
-//void myalloc(const char *, ...);
+void *myalloc(const char *, ...);

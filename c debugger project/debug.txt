@@ -1,0 +1,3 @@
+c suxx at line 0026 from file /home/lar/code/c-programmering/c debugger project/main.c
+c suxx2 at line 0027 from file /home/lar/code/c-programmering/c debugger project/main.c
+c suxx3 at line 0028 from file /home/lar/code/c-programmering/c debugger project/main.c
